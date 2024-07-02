@@ -1,0 +1,10 @@
+
+
+Consider the two-dimensional inviscid and laminar flow around a cylinder with radius Reyt = 0.5 m. Place the far-field boundary at a radius of Rmas = 10 m. Use Cradle CFD or any other CFD code that can handle the described flow situations for this project. 
+ 	Laminar Flow:
+ Use ReynoldsNumber of Re=40 sothat the flow is laminar and steady a flow (use  Q =1kg/m³ and u= 0.025 Ns/m2 Uoo= 1m/s). Make an appropriate mest andshow a plotof the convergence history, the Cp distribution in the entire domain as well as any other plots you find of interest. 2
+
+	What is the predicted drag coefficient at this reynolds Number (experiments yield about 1.8), with Fd the computed drag force? Conduct a grid con- vergence study for Ca with at least three different mesh resolutions. Can you estimate the continuum value (for zero mesh spacing)? Note that the drag force is broken into a pressure component and a viscous component. How much of the drag force comes from pressure forces and how much from viscous forces?
+ 
+	Inviscid flow: 
+Consider a free-stream velocity of Uoo = 1 m/s. Show a plot of the convergence history as well as the Cp distribution in the entire domain. Finally, plot Cp vs. the curve length of the cylinder surface and compare with the potential flow theory prediction.

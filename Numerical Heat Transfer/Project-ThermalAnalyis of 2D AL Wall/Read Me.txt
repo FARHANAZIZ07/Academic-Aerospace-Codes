@@ -1,0 +1,19 @@
+#################A Numerical Approach for Thermal Analysis of a 2D Aluminum Wall####################
+
+
+	A 2D plane wall sits at an initial temperature of 300 K everywhere. The wall is 1 meter wide, 1 meter tall
+	and 1 cm thick and is constructed from solid aluminum (k = 200 W / m K, Cp = 903 J / kg K, density =
+	2700 kg / m3). The left, right and bottom boundaries are maintained at all times at a temperature of 300
+	K. At a time step of 0 seconds, the top boundary is suddenly exposed to a constant temperature
+	boundary condition of 500 K. To complicate matters further, at a time step of 0 seconds, very cold air
+	(200 K) begins to flow across the entire plane wall, causing convection with a convection coefficient of h
+	= 5 W/m2K across the entire surface of the plane wall.
+
+	1.Code that will predict and create a 2D plot showing the temperature distribution.
+	2.A grid convergence study (using a convergence criteria of 1e-5) to determine the correct size of the control volumes.
+	3. Plot Of the temperature distribution of the 2D wall at 10 seconds, 60 seconds and 600 seconds for a
+		convection coefficient of 5 W/m2K.
+	4. Plot Of the temperature as a function of time in the center of the wall (at x = 0.5 and y = 0.5 if the origin
+		is the bottom left corner) for h values of 5, 10 and 50 W/m2K.
+
+#############

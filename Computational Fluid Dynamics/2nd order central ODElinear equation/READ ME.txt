@@ -1,0 +1,4 @@
+ Consider the matrix  
+		Ac  =  Bp(M : -1,0,1)/(2Ax) 
+ corresponding to the ODE form of the linear convection equation resulting from the  application of second-order central differencing with periodic boundary conditions  and a = 1, Note that the domain is 0 < a < 2r and Ax = 2*pi/M. The grid nodes  are given by xj=jAr, j = 1,2,..., M  Consider first an M = 10 point grid. Compute and plot the ODE solution at t= 2*pi  for the initial condition u(a, 0) = sin(a). Compare with the exact solution of the  PDE as derived in the lecture.   Repeat for the initial condition u(x, 0) = sin(2x) and use also M = 30 for both initial  conditions.  
+Hint: The ODE solution is given by wum(r,,t) = 2M-1 fm(0)etmle5-ait and you  need to determine fm(0) for m =1,2,....M first. Use km =m

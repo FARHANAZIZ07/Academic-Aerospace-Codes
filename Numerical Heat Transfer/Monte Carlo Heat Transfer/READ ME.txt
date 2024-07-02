@@ -1,0 +1,7 @@
+
+##############
+	Code that uses Monte Carlo methods to predict the value of Pi. Do this by populating a square with random points. Then identifying the number of points that fall 		within 	the largest circle that falls within the square. Calculated pi by multiplying the number of points that fell within the circle by four and dividing by the 	total 	number 	of points that you put down.
+	An image of the square filled with 1000 dots and the circle inscribed inside the square (see Wikipedia page for example of this image).
+	A plot of calculated value of pi as a function of the number of points. Calculated up to 10,000 points.
+	
+##################

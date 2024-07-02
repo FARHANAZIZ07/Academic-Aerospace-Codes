@@ -1,0 +1,13 @@
+######
+	Monte Carlo Ray Tracing code. This code  operates in 2 dimensions and there
+	is no reflection of rays from the surfaces.
+
+	Two parallel plates each 1 meter in width with connected midlines
+	are spaced 1 meter apart. Calculated the number of rays intercepted by the top surface for a bottom
+	surface that is emitting 100,000 rays. 
+
+	Generated plot showing the view
+	factor of the top plate as viewed by the bottom plate as a function of distance between the plates. Plot
+	the view factor from a distance of 0.5 meters to a distance of 5 meters every 0.5 meters.
+	Calculations for 1,000 and 10,000 and 100,000 rays emitted from the bottom plate.
+#######

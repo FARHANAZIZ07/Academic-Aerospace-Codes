@@ -1,0 +1,15 @@
+#######Problem #1#####
+Air flows in slug flow (1D flow) through a channel that is 1 centimeter long. The air enters the channel at a temperature of 300 K and exits the channel at a temperature of 400 K. Complete the following tasks:
+ 
+a. Plot the analytical solution for the temperature as a function of the flow direction, x. Do so for a fluid velocity of 0.1 m/s and 1 m/s. What is the Peclet number for each velocity?
+b. Plot the numerical solution for the temperature as a function of the flow direction, x, again for the two fluid velocities using the upwinding scheme. Discretize the domain into 12 nodes. What is the Peclet number for each control volume?
+c. Create a plot comparing the analytical to the numerical solution for each velocity. Does the upwinding scheme appear to work well? 
+
+#####Problem #2#####
+
+Water is flowing through a pipe that is 10 cm in diameter and 1000 meters in length. The water has a fully developed velocity profile throughout the full pipe given as a function of radius (r) as given below, with a mean velocity (um) of 0.1 m/s. The water enters the pipe at a temperature of 300 K and is rejected into a well-mixed pool of water at 400 K. The walls of the pipe are maintained at a temperature of 400 K. Complete the following tasks:
+
+	
+ 
+a. Determine the coefficients ap, ae, aw, an, as and b for each type of control volume encountered in this problem.
+b. Use the upwinding scheme to solve for the temperature throughout the pipe. Provide this information as a colormap with radius as the y axis and x as the x axis. Your y axis should go from    -r at the bottom to +r at the top with 0 at the center. Use at least 30 control volumes in the y direction and at least 100 control volumes in the x direction. Provide your code and your colormap.

@@ -1,0 +1,13 @@
+## Description
+This project involves aeroelastic simulations using ASTROS 
+
+## Files
+- `input.dat`: Input data file for ASTROS simulation.
+- `output.dat`: Output data file from ASTROS simulation.
+
+
+## How to Run
+1. Run the ASTROS simulation using `input.dat`.
+
+## Results
+-Different Modes of the wing

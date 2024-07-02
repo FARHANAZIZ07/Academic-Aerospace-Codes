@@ -1,0 +1,242 @@
+ASSIGN DATABASE  SUP DNA NEW 
+SOLUTION
+TITLE = Intro to Aeroelasticity Wing
+ANALYZE
+      LABEL = 5
+      BOUNDARY SPC = 4, SUPPORT=5, MPC=1000
+      PRINT TRIM, DISP=ALL , TPRES = ALL , LOAD = ALL
+      SAERO ANTISYMMETRIC(TRIM = 118)
+      SAERO ANTISYMMETRIC(TRIM = 119)
+      SAERO ANTISYMMETRIC(TRIM = 120)
+      SAERO ANTISYMMETRIC(TRIM = 121)
+      SAERO ANTISYMMETRIC(TRIM = 122)
+      SAERO ANTISYMMETRIC(TRIM = 123)
+      SAERO ANTISYMMETRIC(TRIM = 124)
+      SAERO ANTISYMMETRIC(TRIM = 125)
+      PRINT TRIM
+END
+BEGIN BULK
+$        THE STRUCTURAL MODEL
+$ Upper surface grids
+GRID,     1,  ,   6.000,    0.000,    3.000
+GRID,     2,  ,  24.000,    0.000,    3.000
+GRID,     3,  ,  42.000,    0.000,    3.000
+GRID,     4,  ,  -11.321,   30.000,    3.000
+GRID,     5,  ,    6.679,   30.000,    3.000
+GRID,     6,  ,   24.679,   30.000,    3.000
+GRID,     7,  ,  -28.641,   60.000,    3.000
+GRID,     8,  ,  -10.641,   60.000,    3.000
+GRID,     9,  ,    7.359,   60.000,    3.000
+GRID,    10,  ,  -45.962,   90.000,    3.000
+GRID,    11,  ,  -27.962,   90.000,    3.000
+GRID,    12,  ,   -9.962,   90.000,    3.000
+GRID,    13,  ,  -63.282,  120.000,    3.000
+GRID,    14,  ,  -45.282,  120.000,    3.000
+GRID,    15,  ,  -27.282,  120.000,    3.000
+$ Lower surface grids
+GRID,    16,  ,   6.000,    0.000,   -3.000
+GRID,    17,  ,  24.000,    0.000,   -3.000
+GRID,    18,  ,  42.000,    0.000,   -3.000
+GRID,    19,  ,  -11.321,   30.000,   -3.000
+GRID,    20,  ,  6.679,   30.000,   -3.000
+GRID,    21,  ,  24.679,   30.000,   -3.000
+GRID,    22,  ,  -28.641,   60.000,   -3.000
+GRID,    23,  ,  -10.641,   60.000,   -3.000
+GRID,    24,  ,  7.359,   60.000,   -3.000
+GRID,    25,  ,  -45.962,   90.000,   -3.000
+GRID,    26,  ,  -27.962,   90.000,   -3.000
+GRID,    27,  ,  -9.962,   90.000,   -3.000
+GRID,    28,  ,  -63.282,  120.000,   -3.000
+GRID,    29,  ,  -45.282,  120.000,   -3.000
+GRID,    30,  , -27.282,  120.000,   -3.000 
+$ SUPPORT POINT GRID 100
+GRID,  100,    , 9.0, 0.0, 0.0
+$ Rigid element to support point
+RBAR, 1000, 1, 1, 100,  , 123456, 123456 
+RBAR, 1000, 2, 2, 100,  , 123456, 123456 
+RBAR, 1000, 3, 3, 100,  , 123456, 123456 
+RBAR, 1000, 4, 16, 100,  , 123456, 123456 
+RBAR, 1000, 5, 17, 100,  , 123456, 123456 
+RBAR, 1000, 6, 18, 100,  , 123456, 123456 
+$ Boundary conditions
+SPC1,    4,   12356, 100
+SUPORT, 5, 100, 4
+CONM2, 1, 100, , 1000.0
+CONVERT, MASS, .00259 
+$ Leading edge spar
+CSHEAR, 1, 1, 16,  1,  4, 19
+CSHEAR, 2, 1, 19,  4,  7, 22
+CSHEAR, 3, 1, 22,  7, 10, 25
+CSHEAR, 4, 1, 25, 10, 13, 28
+$ Leading and trailing edge Spar properties
+PSHEAR, 1, 1, 0.25
+$ Leading edge spar caps top
+CBAR, 1, 2, 1, 4, 3
+CBAR, 2, 2, 4, 7, 3
+CBAR, 3, 2, 7, 10, 3
+CBAR, 4, 2, 10, 13, 3
+$ Leading edge spar caps bottom
+CBAR, 5, 2, 16, 19, 18
+CBAR, 6, 2, 19, 22, 18
+CBAR, 7, 2, 22, 25, 18
+CBAR, 8, 2, 25, 28, 18
+$ Leading edge spar properties
+PBAR, 2, 1, .50, .0417, .01,   .001
+$ Mid Spar
+CSHEAR, 5, 2, 17,  2,  5, 20
+CSHEAR, 6, 2, 20,  5,  8, 23
+CSHEAR, 7, 2, 23,  8, 11, 26
+CSHEAR, 8, 2, 26, 11, 14, 29
+$ Mid  Spar properties
+PSHEAR, 2, 1, 0.10
+$ Mid spar caps top
+CBAR, 9, 2, 2, 5, 3
+CBAR,10, 2, 5, 8, 3
+CBAR,11, 2, 8, 11, 3
+CBAR,12, 2, 11, 14, 3
+$ Mid spar caps bottom
+CBAR,13, 2, 17, 20, 18
+CBAR,14, 2, 20, 23, 18
+CBAR,15, 2, 23, 26, 18
+CBAR,16, 2, 26, 29, 18
+$ Trail edge  Spar
+CSHEAR, 9, 1, 18,  3,  6, 21
+CSHEAR,10, 1, 21,  6,  9, 24
+CSHEAR,11, 1, 24,  9, 12, 27
+CSHEAR,12, 1, 27, 12, 15, 30
+$ Trailing edge spar caps top
+CBAR,17, 2, 3, 6, 1 
+CBAR,18, 2, 6, 9, 1
+CBAR,19, 2, 9, 12, 1
+CBAR,20, 2, 12, 15, 1
+$ Trailing edge spar caps bottom
+CBAR,21, 2, 18, 21, 1
+CBAR,22, 2, 21, 24, 16
+CBAR,23, 2, 24, 27, 16
+CBAR,24, 2, 27, 30, 16
+$ Root Rib
+CSHEAR,13, 3, 16,  1,  2, 17
+CSHEAR,14, 3, 17,  2,  3, 18
+$ Rib # 2 @ y = 30"
+CSHEAR,15, 3, 19,  4,  5, 20
+CSHEAR,16, 3, 20,  5,  6, 21
+$ Rib # 3 @ y = 60"
+CSHEAR,17, 3, 22,  7,  8, 23
+CSHEAR,18, 3, 23,  8,  9, 24
+$ Rib Properties Ribs # 1, 2, 3
+PSHEAR, 3, 1, 0.25
+$ Rib # 4 @ y = 90"
+CSHEAR,19, 4, 25, 10, 11, 26
+CSHEAR,20, 4, 26, 11, 12, 27
+$ Rib # 5 @ y = 120"
+CSHEAR,21, 4, 28, 13, 14, 29
+CSHEAR,22, 4, 29, 14, 15, 30
+$ Rib Properties Ribs # 4, 5
+PSHEAR, 4, 1, 0.10
+$ Posts
+CROD, 1, 3, 1, 16
+CROD, 2, 3, 2, 17
+CROD, 3, 3, 3, 18
+CROD, 4, 3, 4, 19
+CROD, 5, 3, 5, 20
+CROD, 6, 3, 6, 21
+CROD, 7, 3, 7, 22
+CROD, 8, 3, 8, 23
+CROD, 9, 3, 9, 24
+CROD,10, 3,10, 25
+CROD,11, 3,11, 26 
+CROD,12, 3,12, 27
+CROD,13, 3,13, 28
+CROD,14, 3,14, 29
+CROD,15, 3,15, 30
+$ Posts Properties
+PROD, 3, 1, 0.1
+$Top skins
+CQDMEM1, 1, 4, 1, 2, 5, 4
+CQDMEM1, 2, 4, 4, 5, 8, 7
+CQDMEM1, 3, 4, 7, 8, 11, 10
+CQDMEM1, 4, 4, 10, 11, 14, 13
+CQDMEM1, 5, 4, 2, 3, 6, 5
+CQDMEM1, 6, 4, 5, 6, 9, 8
+CQDMEM1, 7, 4, 8, 9, 12, 11
+CQDMEM1, 8, 4, 11, 12, 15, 14
+$Bottom skins
+CQDMEM1, 9, 4, 16, 17, 20, 19
+CQDMEM1,10, 4, 19, 20, 23, 22
+CQDMEM1,11, 4, 22, 23, 26, 25
+CQDMEM1,12, 4, 25, 26, 29, 28
+CQDMEM1,13, 4, 17, 18, 21, 20
+CQDMEM1,14, 4, 20, 21, 24, 23
+CQDMEM1,15, 4, 23, 24, 27, 26
+CQDMEM1,16, 4, 26, 27, 30, 29
+$
+$ Skin Thicknesses
+PQDMEM1, 4, 1, .20
+MAT1,    1,  1.E+6,  ,  0.3,  0.1
+$
+$
+$        AERODYNAMIC CASE
+$
+$      MACRO ELEMENT ENTRY
+AEROS, 101, , 48.0, 120.0, 11520.0,
+$
+$       AERODYNAMIC PHYSICAL DATA
+$
+AERO, 101, 120.0, 1.1E+6
+$
+$
+CAERO6, 101, WING,  ,  , 20, 30
+$ 
+$     CHORD ENTRY
+AEFACT, 20, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, +AEF1
++AEF1, 70.0, 80.0, 90.0, 100.0
+$
+$    SPAN ENTRY
+AEFACT, 30, 0.00, 6.0, 12.0, 18.0, 24.0, 30.0, 36.0, +AEF2
++AEF2, 42.0, 48.0, 54.0, 60.0, 66.0, 72.0, 78.0, 84.0, +AEF3
++AEF3, 90.0, 96.0, 102.0, 108.0, 114.0, 120.0
+$
+$   FLATPLATE AIRFOIL
+$
+AIRFOIL, 101, WING, , 40, , , , ,+AIR
++AIR, 0.0, 0.0, 0.0, 48.0
+AIRFOIL, 101, WING, , 40, , , , ,+AIR
++AIR, -69.28, 120.0, 0.0, 48.0
+$
+AEFACT, 40, 0.0, 25.0, 50.0, 75.0, 100.0
+$
+$
+$    SPLINE
+$
+SPLINE1, 50, , 101, 101, 300, 25
+SET1, 25, 1, THRU, 15
+$
+$ 	TRIM SYMMETRIC
+TRIM, 118, 1.3, 5.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 119, 1.3, 10.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 120, 1.3, 20.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 121, 1.3, 30.0, ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 122, 1.3, 40.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 123, 1.3,50.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 124, 1.3, 60.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+TRIM, 125, 1.3, 70.0 , ROLL, ,1430.0 , , , +TRM1
++TRM1, CS,FREE,PACCEL,0.0,PRATE,1.0
+$
+AESURF,CS, ANTISYM,101, ,268,300
+$AESURF,CS1, SYM,101, ,268,300
+$
+ENDDATA

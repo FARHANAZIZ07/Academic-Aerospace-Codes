@@ -1,0 +1,1467 @@
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      ::::::::::::::::::::::::::::::::::::::::::::::::::
+                                      ::                                              ::
+                                      ::   AUTOMATED STRUCTURAL OPTIMIZATION SYSTEM   ::
+                                      ::                                              ::
+                                      ::   *****  *****  *****  *****  *****  *****   ::
+                                      ::   *   *  *        *    *   *  *   *  *       ::
+                                      ::   *****  *****    *    *****  *   *  *****   ::
+                                      ::   *   *      *    *    *  *   *   *      *   ::
+                                      ::   *   *  *****    *    *   *  *****  *****   ::
+                                      ::                                              ::
+                                      ::                 VERSION 11.0                 ::
+                                      ::                                              ::
+                                      ::     DEC VAX/ULTRIX SERIES - F77 COMPILER     ::
+                                      ::                  MAY 1, 1994                 ::
+                                      ::                                              ::
+                                      ::::::::::::::::::::::::::::::::::::::::::::::::::
+1                                                                                       ASTROS VERSION 11.0  03/16/22   P.    1  
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+                                       *****  ASTROS ASSIGN DATABASE COMMAND ECHO  *****                                         
+                                                                                                                                 
+
+                          *...10...**...20...**...30...**...40...**...50...**...60...**...70...**...80...*
+
+                          ASSIGN DATABASE  SYM DNA NEW                                                    
+
+                          *...10...**...20...**...30...**...40...**...50...**...60...**...70...**...80...*
+
+                          DATA BASE NAME     = SYM     
+                          DATA BASE PASSWORD = DNA     
+                          DATA BASE STATUS   = NEW 
+                          USER PARAMETERS ARE:
+                          ** NONE GIVEN ** 
+1                                                                                       ASTROS VERSION 11.0  03/16/22   P.    2  
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+                                          S O L U T I O N   C O N T R O L   S U M M A R Y                                        
+                                                                                                                                 
+                        TITLE = Intro to Aeroelasticity Wing                                            
+                        ANALYZE                                                                         
+                              LABEL = 0000000000                                                        
+                              BOUNDARY SPC = 3, SUPPORT=5, MPC=1000                                     
+                              PRINT TRIM, DISP=ALL , TPRE = ALL , LOAD = ALL                            
+                              SAERO(TRIM = 100)                                                         
+                              SAERO(TRIM = 101)                                                         
+                              SAERO(TRIM = 102)                                                         
+                              SAERO(TRIM = 103)                                                         
+                              SAERO(TRIM = 104)                                                         
+                              SAERO(TRIM = 105)                                                         
+                              SAERO(TRIM = 106)                                                         
+                              SAERO(TRIM = 107)                                                         
+                              SAERO(TRIM = 108)                                                         
+                              SAERO(TRIM = 109)                                                         
+                              PRINT TRIM                                                                
+                        END                                                                             
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    3  
+                                                                                                                                 
+                                                                                                                                 
+                                            S O R T E D   B U L K   D A T A   E C H O                                            
+                    CARD                                                                                                         
+                    COUNT         *...1..**...2..**...3..**...4..**...5..**...6..**...7..**...8..**...9..**..10..*               
+                        1 -       AEFACT  20      0.0     10.0    20.0    30.0    40.0    50.0    60.0    +AEF1   
+                        2 -       +AEF1   70.0    80.0    90.0    100.0                                           
+                        3 -       AEFACT  30      0.00    6.0     12.0    18.0    24.0    30.0    36.0    +AEF2   
+                        4 -       +AEF2   42.0    48.0    54.0    60.0    66.0    72.0    78.0    84.0    +AEF3   
+                        5 -       +AEF3   90.0    96.0    102.0   108.0   114.0   120.0                           
+                        6 -       AEFACT  40      0.0     25.0    50.0    75.0    100.0                           
+                        7 -       AEROS   101             48.0    120.0   5760.0                                  
+                        8 -       AESURF  CS      SYM     101             268     300                             
+                        9 -       AIRFOIL 101     WING            40                                      +AIR    
+                       10 -       +AIR    0.0     120.0   0.0     48.0                                            
+                       11 -       AIRFOIL 101     WING            40                                      +AIR    
+                       12 -       +AIR    0.0     0.0     0.0     48.0                                            
+                       13 -       CAERO6  101     WING                    20      30                              
+                       14 -       CBAR    1       2       1       4       3                                       
+                       15 -       CBAR    2       2       4       7       3                                       
+                       16 -       CBAR    3       2       7       10      3                                       
+                       17 -       CBAR    4       2       10      13      3                                       
+                       18 -       CBAR    5       2       16      19      18                                      
+                       19 -       CBAR    6       2       19      22      18                                      
+                       20 -       CBAR    7       2       22      25      18                                      
+                       21 -       CBAR    8       2       25      28      18                                      
+                       22 -       CBAR    9       2       2       5       3                                       
+                       23 -       CBAR    10      2       5       8       3                                       
+                       24 -       CBAR    11      2       8       11      3                                       
+                       25 -       CBAR    12      2       11      14      3                                       
+                       26 -       CBAR    13      2       17      20      18                                      
+                       27 -       CBAR    14      2       20      23      18                                      
+                       28 -       CBAR    15      2       23      26      18                                      
+                       29 -       CBAR    16      2       26      29      18                                      
+                       30 -       CBAR    17      2       3       6       1                                       
+                       31 -       CBAR    18      2       6       9       1                                       
+                       32 -       CBAR    19      2       9       12      1                                       
+                       33 -       CBAR    20      2       12      15      1                                       
+                       34 -       CBAR    21      2       18      21      1                                       
+                       35 -       CBAR    22      2       21      24      16                                      
+                       36 -       CBAR    23      2       24      27      16                                      
+                       37 -       CBAR    24      2       27      30      16                                      
+                       38 -       CONM2   1       100             1000.0                                          
+                       39 -       CONVERT MASS    .00259                                                          
+                       40 -       CQDMEM1 1       4       1       2       5       4                               
+                       41 -       CQDMEM1 2       4       4       5       8       7                               
+                       42 -       CQDMEM1 3       4       7       8       11      10                              
+                       43 -       CQDMEM1 4       4       10      11      14      13                              
+                       44 -       CQDMEM1 5       4       2       3       6       5                               
+                       45 -       CQDMEM1 6       4       5       6       9       8                               
+                       46 -       CQDMEM1 7       4       8       9       12      11                              
+                       47 -       CQDMEM1 8       4       11      12      15      14                              
+                       48 -       CQDMEM1 9       4       16      17      20      19                              
+                       49 -       CQDMEM1 10      4       19      20      23      22                              
+                       50 -       CQDMEM1 11      4       22      23      26      25                              
+                       51 -       CQDMEM1 12      4       25      26      29      28                              
+                       52 -       CQDMEM1 13      4       17      18      21      20                              
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    4  
+                                                                                                                                 
+                                                                                                                                 
+                                            S O R T E D   B U L K   D A T A   E C H O                                            
+                    CARD                                                                                                         
+                    COUNT         *...1..**...2..**...3..**...4..**...5..**...6..**...7..**...8..**...9..**..10..*               
+                       53 -       CQDMEM1 14      4       20      21      24      23                              
+                       54 -       CQDMEM1 15      4       23      24      27      26                              
+                       55 -       CQDMEM1 16      4       26      27      30      29                              
+                       56 -       CROD    1       3       1       16                                              
+                       57 -       CROD    2       3       2       17                                              
+                       58 -       CROD    3       3       3       18                                              
+                       59 -       CROD    4       3       4       19                                              
+                       60 -       CROD    5       3       5       20                                              
+                       61 -       CROD    6       3       6       21                                              
+                       62 -       CROD    7       3       7       22                                              
+                       63 -       CROD    8       3       8       23                                              
+                       64 -       CROD    9       3       9       24                                              
+                       65 -       CROD    10      3       10      25                                              
+                       66 -       CROD    11      3       11      26                                              
+                       67 -       CROD    12      3       12      27                                              
+                       68 -       CROD    13      3       13      28                                              
+                       69 -       CROD    14      3       14      29                                              
+                       70 -       CROD    15      3       15      30                                              
+                       71 -       CSHEAR  1       1       16      1       4       19                              
+                       72 -       CSHEAR  2       1       19      4       7       22                              
+                       73 -       CSHEAR  3       1       22      7       10      25                              
+                       74 -       CSHEAR  4       1       25      10      13      28                              
+                       75 -       CSHEAR  5       2       17      2       5       20                              
+                       76 -       CSHEAR  6       2       20      5       8       23                              
+                       77 -       CSHEAR  7       2       23      8       11      26                              
+                       78 -       CSHEAR  8       2       26      11      14      29                              
+                       79 -       CSHEAR  9       1       18      3       6       21                              
+                       80 -       CSHEAR  10      1       21      6       9       24                              
+                       81 -       CSHEAR  11      1       24      9       12      27                              
+                       82 -       CSHEAR  12      1       27      12      15      30                              
+                       83 -       CSHEAR  13      3       16      1       2       17                              
+                       84 -       CSHEAR  14      3       17      2       3       18                              
+                       85 -       CSHEAR  15      3       19      4       5       20                              
+                       86 -       CSHEAR  16      3       20      5       6       21                              
+                       87 -       CSHEAR  17      3       22      7       8       23                              
+                       88 -       CSHEAR  18      3       23      8       9       24                              
+                       89 -       CSHEAR  19      4       25      10      11      26                              
+                       90 -       CSHEAR  20      4       26      11      12      27                              
+                       91 -       CSHEAR  21      4       28      13      14      29                              
+                       92 -       CSHEAR  22      4       29      14      15      30                              
+                       93 -       GRID    1               6.0     0.0     3.0                                     
+                       94 -       GRID    2               24.     0.0     3.0                                     
+                       95 -       GRID    3               42.     0.0     3.0                                     
+                       96 -       GRID    4               6.0     30.     3.0                                     
+                       97 -       GRID    5               24.     30.     3.0                                     
+                       98 -       GRID    6               42.     30.     3.0                                     
+                       99 -       GRID    7               6.0     60.     3.0                                     
+                      100 -       GRID    8               24.     60.     3.0                                     
+                      101 -       GRID    9               42.     60.     3.0                                     
+                      102 -       GRID    10              6.0     90.     3.0                                     
+                      103 -       GRID    11              24.     90.     3.0                                     
+                      104 -       GRID    12              42.     90.     3.0                                     
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    5  
+                                                                                                                                 
+                                                                                                                                 
+                                            S O R T E D   B U L K   D A T A   E C H O                                            
+                    CARD                                                                                                         
+                    COUNT         *...1..**...2..**...3..**...4..**...5..**...6..**...7..**...8..**...9..**..10..*               
+                      105 -       GRID    13              6.0     120.    3.0                                     
+                      106 -       GRID    14              24.     120.    3.0                                     
+                      107 -       GRID    15              42.     120.    3.0                                     
+                      108 -       GRID    16              6.0     0.0     -3.0                                    
+                      109 -       GRID    17              24.     0.0     -3.0                                    
+                      110 -       GRID    18              42.     0.0     -3.0                                    
+                      111 -       GRID    19              6.0     30.     -3.0                                    
+                      112 -       GRID    20              24.     30.     -3.0                                    
+                      113 -       GRID    21              42.     30.     -3.0                                    
+                      114 -       GRID    22              6.0     60.     -3.0                                    
+                      115 -       GRID    23              24.     60.     -3.0                                    
+                      116 -       GRID    24              42.     60.     -3.0                                    
+                      117 -       GRID    25              6.0     90.     -3.0                                    
+                      118 -       GRID    26              24.     90.     -3.0                                    
+                      119 -       GRID    27              42.     90.     -3.0                                    
+                      120 -       GRID    28              6.0     120.    -3.0                                    
+                      121 -       GRID    29              24.     120.    -3.0                                    
+                      122 -       GRID    30              42.     120.    -3.0                                    
+                      123 -       GRID    100             9.0     0.0     0.0                                     
+                      124 -       MAT1    1       1.E+6           0.3     0.1                                     
+                      125 -       PBAR    2       1       .50     .0417   .01     .001                            
+                      126 -       PQDMEM1 4       1       .20                                                     
+                      127 -       PROD    3       1       0.1                                                     
+                      128 -       PSHEAR  1       1       0.25                                                    
+                      129 -       PSHEAR  2       1       0.10                                                    
+                      130 -       PSHEAR  3       1       0.25                                                    
+                      131 -       PSHEAR  4       1       0.10                                                    
+                      132 -       RBAR    1000    1       1       100             123456  123456                  
+                      133 -       RBAR    1000    2       2       100             123456  123456                  
+                      134 -       RBAR    1000    3       3       100             123456  123456                  
+                      135 -       RBAR    1000    4       16      100             123456  123456                  
+                      136 -       RBAR    1000    5       17      100             123456  123456                  
+                      137 -       RBAR    1000    6       18      100             123456  123456                  
+                      138 -       SET1    25      1       THRU    15                                              
+                      139 -       SPC1    3       12456   100                                                     
+                      140 -       SPLINE1 50              101     101     300     25                              
+                      141 -       SUPORT  5       100     3                                                       
+                      142 -       TRIM    100     1.3     25.0    LIFT                                    +TRM1   
+                      143 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      144 -       TRIM    101     1.3     30.0    LIFT                                    +TRM1   
+                      145 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      146 -       TRIM    102     1.3     35.0    LIFT                                    +TRM1   
+                      147 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      148 -       TRIM    103     1.3     40.0    LIFT                                    +TRM1   
+                      149 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      150 -       TRIM    104     1.3     45.0    LIFT                                    +TRM1   
+                      151 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      152 -       TRIM    105     1.3     50.0    LIFT                                    +TRM1   
+                      153 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      154 -       TRIM    106     1.3     55.0    LIFT                                    +TRM1   
+                      155 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      156 -       TRIM    107     1.3     60.0    LIFT                                    +TRM1   
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    6  
+                                                                                                                                 
+                                                                                                                                 
+                                            S O R T E D   B U L K   D A T A   E C H O                                            
+                    CARD                                                                                                         
+                    COUNT         *...1..**...2..**...3..**...4..**...5..**...6..**...7..**...8..**...9..**..10..*               
+                      157 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      158 -       TRIM    108     1.3     65.0    LIFT                                    +TRM1   
+                      159 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      160 -       TRIM    109     1.3     70.0    LIFT                                    +TRM1   
+                      161 -       +TRM1   ALPHA   FREE    NZ      1.0                                             
+                      162 -       ENDDATA                                                                         
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    7  
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+                         ***    S U M M A R Y   O F   A U T O M A T I C   R E S E Q U E N C I N G    ***
+
+
+                                        METHOD SELECTED                              GPS
+                                        CRITERION                          RMS WAVEFRONT
+
+
+                                                                        BEFORE     AFTER
+                                        BANDWIDTH                           31        13
+                                        PROFILE                            370       235
+                                        MAXIMUM WAVEFRONT                   20        11
+                                        AVERAGE WAVEFRONT               11.935     7.581
+                                        RMS WAVEFRONT                   13.115     7.941
+
+
+                                        NUMBER OF GRID POINTS                         31
+                                        MAXIMUM NODAL DEGREE                          14
+
+                                        ELEMENTS PROCESSED
+                                                                      CROD            15
+                                                                      CSHEAR          22
+                                                                      CONM2            1
+                                                                      CBAR            24
+                                                                      CQDMEM1         16
+                                                                      RBAR             6
+
+                                        TOTAL ELEMENTS                                84
+
+
+
+
+
+
+
+
+
+
+
+
+
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    8  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+      B O U N D A R Y   C O N D I T I O N   S U M M A R Y   F O R   B O U N D A R Y   C O N D I T I O N  1                       
+                                                 (BEFORE ANY AUTOSPC ACTIONS)                                                    
+
+               MATRIX REDUCTION SUMMARY:
+                    THE PHYSICAL SET CONTAINS    186 DEGREES OF FREEDOM (DOFS)
+                                                 186 PHYSICAL DOFS ARE STRUCTURAL
+                                          AND      0 PHYSICAL DOFS ARE EXTRA POINTS
+
+                    THERE ARE     36 DEPENDENT MULTIPOINT CONSTRAINT DOFS LEAVING
+                                 150 INDEPENDENT DOFS
+
+                    THERE ARE      5 SINGLE POINT CONSTRAINT DOFS LEAVING
+                                 145 FREE DOFS
+
+                    THE FREE DOFS ARE NOT REDUCED
+                    THERE ARE    145 ANALYSIS SET DOFS 
+                                   1 OF WHICH ARE "SUPPORTED" LEAVING 
+                                 144 DOFS LEFT OVER
+
+
+               DISCIPLINE-SUBCASE SUMMARY:
+                    *** STATIC AEROELASTICITY HAS BEEN SELECTED ***
+                        10 SUBCASE(S) ARE DEFINED BY SOLUTION CONTROL
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.    9  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+      B O U N D A R Y   C O N D I T I O N   S U M M A R Y   F O R   B O U N D A R Y   C O N D I T I O N  1                       
+                                           (UPDATED TO INCORPORATE AUTOSPC ACTIONS)                                              
+
+               MATRIX REDUCTION SUMMARY:
+                    THE PHYSICAL SET CONTAINS    186 DEGREES OF FREEDOM (DOFS)
+                                                 186 PHYSICAL DOFS ARE STRUCTURAL
+                                          AND      0 PHYSICAL DOFS ARE EXTRA POINTS
+
+                    THERE ARE     36 DEPENDENT MULTIPOINT CONSTRAINT DOFS LEAVING
+                                 150 INDEPENDENT DOFS
+
+                    THERE ARE      5 SINGLE POINT CONSTRAINT DOFS LEAVING
+                                 145 FREE DOFS
+
+                    THE FREE DOFS ARE NOT REDUCED
+                    THERE ARE    145 ANALYSIS SET DOFS 
+                                   1 OF WHICH ARE "SUPPORTED" LEAVING 
+                                 144 DOFS LEFT OVER
+
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   10  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     1
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      25.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      100   SOLUTION SUBCASE NUMBER =        1
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     9  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+
+
+
+     RIGID BODY SUPPORT CHECK FOR BOUNDARY:  1
+     GRID   COMPONENT   X COL. NORM   KRR COL. NORM   ERROR RATIO     NORM OF X     NORM OF KRR    ERROR RATIO   STRAIN ENERGY
+       100      3       5.88003E-12    4.61809E+04    1.27326E-16    5.88003E-12    4.61809E+04    1.27326E-16    5.88003E-12
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   11  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      100          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1723   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    9.8744   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.0228   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907   -1.3060   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0240   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -1.3723   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   100 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  2.50000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      1.02625E-01       1.18904E-01  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   12  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     2
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      30.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      101   SOLUTION SUBCASE NUMBER =        2
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     8  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   13  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      101          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1746   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225   10.0021   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.0694   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907   -3.9779   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0319   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -1.8302   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   101 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  3.00000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      8.44288E-02       9.90865E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   14  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     3
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      35.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      102   SOLUTION SUBCASE NUMBER =        3
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     7  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   15  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      102          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1753   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225   10.0418   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.1170   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907   -6.7032   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0398   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -2.2830   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   102 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  3.50000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      7.20812E-02       8.49313E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   16  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     4
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      40.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      103   SOLUTION SUBCASE NUMBER =        4
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     6  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   17  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      103          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1742   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    9.9829   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.1632   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907   -9.3528   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0473   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -2.7079   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   103 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  4.00000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      6.34434E-02       7.43148E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   18  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     5
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      45.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      104   SOLUTION SUBCASE NUMBER =        5
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     5  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   19  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      104          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1714   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    9.8232   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.2058   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -11.7914   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0538   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.0823   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   104 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  4.50000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      5.73107E-02       6.60576E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   20  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     6
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      50.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      105   SOLUTION SUBCASE NUMBER =        6
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     4  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   21  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      105          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1670   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    9.5707   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.2426   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -13.8997   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0591   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.3878   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   105 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  5.00000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      5.29406E-02       5.94519E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   22  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     7
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      55.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      106   SOLUTION SUBCASE NUMBER =        7
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     3  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   23  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      106          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1613   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    9.2418   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.2722   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -15.5940   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0631   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.6130   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   106 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  5.50000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      4.98407E-02       5.40472E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   24  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     8
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      60.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      107   SOLUTION SUBCASE NUMBER =        8
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     2  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   25  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      107          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1546   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    8.8585   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.2939   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -16.8368   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0655   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.7547   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   107 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  6.00000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      4.76637E-02       4.95432E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   26  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T     9
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      65.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      108   SOLUTION SUBCASE NUMBER =        9
+
+               ****************************************************************************************************
+               IN THIS BOUNDARY CONDITION,     1  SAERO SUBCASE(S) REMAIN OF    10 SELECTED
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   27  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      108          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1474   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    8.4447   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.3078   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -17.6362   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0666   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.8179   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   108 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  6.50000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      4.61536E-02       4.57322E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   28  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                                                                                                                 
+                                                                                                                                 
+
+
+               S A E R O   S U B C A S E   S U M M A R Y   F O R   B O U N D A R Y     1,   S U B S C R I P T    10
+               ****************************************************************************************************
+
+                      1  SAERO SUBCASE(S) WILL BE ANALYZED HAVING:
+                         MACH INDEX            =        1
+                         SYMMETRY              = SYMMETRIC       
+                         MACH NUMBER           =       1.30000
+                         DYNAMIC PRESSURE      =      70.00000
+                         TRIM TYPE             = LIFT    
+                         SAERO ANALYSIS(ES) WITH THE FOLLOWING TRIM IDENTIFICATION(S) WILL BE ANALYZED:
+                                      TRIM SET =      109   SOLUTION SUBCASE NUMBER =       10
+
+               ****************************************************************************************************
+               THIS PASS COMPLETES THE PROCESSING OF THE    10 SAERO SUBCASE(S) IN THIS BOUNDARY CONDITION
+               ****************************************************************************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   29  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                                                                      
+                                                                                                                                 
+                                      NONDIMENSIONAL LONGITUDINAL STABILITY DERIVATIVES                                          
+                        COMPUTED AT THE AERODYNAMIC REFERENCE GRID AND INCLUDING ANY CONTROL EFFECTIVENESS                       
+
+                                        TRIM IDENTIFICATION   =      109          REFERENCE GRID   =        0
+                                        REFERENCE AREA        =   5.7600E+03      REFERENCE CHORD  =   4.8000E+01
+
+
+                                     <<<         DRAG          >>> <<<         LIFT          >>> <<<    PITCHING MOMENT    >>>
+                                       RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE    RIGID     RIGID   FLEXIBLE
+      PARAMETER      LABEL            DIRECT    SPLINED             DIRECT    SPLINED             DIRECT    SPLINED
+      ---------      -----            ------    -------  --------   ------    -------  --------   ------    -------  --------
+  THICKNESS/CAMBER "THKCAM  "          0.0000    N/A       N/A       0.0000    0.0000    0.0000    0.0000    N/A       N/A
+0
+  ANGLE OF ATTACK  "ALPHA   " 1/DEG    0.0026    N/A       N/A       0.1487    0.1487    0.1400   -0.0777    N/A       N/A
+  ANGLE OF ATTACK  "ALPHA   " 1/RAD    0.1487    N/A       N/A       8.5212    8.5225    8.0217   -4.4541    N/A       N/A
+0
+  PITCH RATE       "QRATE   " S/DEG    0.0000    N/A       N/A       0.1517    0.1517   -0.3148   -0.1059    N/A       N/A
+  PITCH RATE       "QRATE   " S/RAD    0.0000    N/A       N/A       8.6907    8.6907  -18.0359   -6.0666    N/A       N/A
+0
+  CONTROL SURFACE  "CS      " 1/DEG    0.0000    N/A       N/A       0.0085    0.0085   -0.0665   -0.0076    N/A       N/A
+  CONTROL SURFACE  "CS      " 1/RAD    0.0000    N/A       N/A       0.4886    0.4886   -3.8127   -0.4328    N/A       N/A
+  ---------------------------------------------------------------------------------------------------------------------------
+  COMPUTED DRAG VALUES ARE INCLUDED FOR COMPLETENESS AND MODEL CHECK-OUT ONLY
+            USE CAUTION IN INTERPRETING THEIR PHYSICAL VALIDITY
+  VALUES MARKED "N/A" CANNOT BE COMPUTED UNLESS THE CORRESPONDING DOF IS SUPPORTED
+  ---------------------------------------------------------------------------------------------------------------------------
+
+
+          TRIM RESULTS FOR TRIM SET   109 OF TYPE LIFT    
+          -----------------------------------------------
+
+          MACH NUMBER       1.30000E+00
+          DYNAMIC PRESSURE  7.00000E+01
+
+          TRIM PARAMETERS:
+                 DEFINITION             LABEL           FLEXIBLE           RIGID
+                 ----------             -----           --------           -----
+          ANGLE OF ATTACK             "ALPHA   "      4.51165E-02       4.24656E-02  DEG        (COMPUTED)  
+          LOAD FACTOR                 "NZ      "      3.86100E+02       3.86100E+02             (USER INPUT)
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   30  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 1                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.47805E-03  -2.48424E-02   3.50570E-02   8.42008E-03   0.00000E+00   4.04292E-05
+                 5         G      3.95744E-04  -2.19952E-02   4.47829E-02   8.50338E-03   0.00000E+00  -1.85681E-05
+                 6         G      4.23103E-03  -2.43285E-02   3.08911E-02   8.20358E-03   0.00000E+00  -7.75709E-05
+                 7         G     -4.46233E-04  -3.58450E-02   3.50258E-01   1.20534E-02   0.00000E+00  -1.17093E-04
+                 8         G      9.07679E-04  -3.44871E-02   3.49772E-01   1.16717E-02   0.00000E+00  -1.64957E-05
+                 9         G      2.27645E-03  -3.53080E-02   3.39166E-01   1.18102E-02   0.00000E+00   8.26386E-05
+                10         G      9.45317E-04  -3.91200E-02   7.32023E-01   1.30629E-02   0.00000E+00  -1.43924E-05
+                11         G      1.35712E-03  -3.84607E-02   7.26373E-01   1.29689E-02   0.00000E+00  -1.15865E-05
+                12         G      1.78543E-03  -3.87568E-02   7.14348E-01   1.29013E-02   0.00000E+00  -8.42369E-06
+                13         G      1.51156E-03  -3.92942E-02   1.12397E+00   1.30657E-02   0.00000E+00  -2.11157E-05
+                14         G      1.59921E-03  -3.91551E-02   1.11443E+00   1.29183E-02   0.00000E+00  -6.31137E-06
+                15         G      1.70435E-03  -3.91219E-02   1.10328E+00   1.29959E-02   0.00000E+00   8.26569E-06
+                16         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.47903E-03   2.48429E-02   3.18071E-02   8.33925E-03   0.00000E+00  -4.04733E-05
+                20         G     -3.94775E-04   2.19952E-02   4.04380E-02   8.39310E-03   0.00000E+00   1.85234E-05
+                21         G     -4.22993E-03   2.43279E-02   2.74148E-02   8.11649E-03   0.00000E+00  -1.69686E-05
+                22         G      4.48327E-04   3.58455E-02   3.47108E-01   1.20617E-02   0.00000E+00   1.17060E-04
+                23         G     -9.05560E-04   3.44871E-02   3.45572E-01   1.16928E-02   0.00000E+00   1.64625E-05
+                24         G     -2.27427E-03   3.53074E-02   3.36087E-01   1.18470E-02   0.00000E+00  -5.72269E-05
+                25         G     -9.42258E-04   3.91205E-02   7.28530E-01   1.30861E-02   0.00000E+00   1.43607E-05
+                26         G     -1.35407E-03   3.84606E-02   7.22157E-01   1.30077E-02   0.00000E+00   1.15556E-05
+                27         G     -1.78241E-03   3.87562E-02   7.11847E-01   1.29385E-02   0.00000E+00   1.12470E-06
+                28         G     -1.50755E-03   3.92948E-02   1.12295E+00   1.31778E-02   0.00000E+00   2.10841E-05
+                29         G     -1.59520E-03   3.91551E-02   1.11338E+00   1.30575E-02   0.00000E+00   6.27870E-06
+                30         G     -1.70032E-03   3.91213E-02   1.10296E+00   1.30865E-02   0.00000E+00  -4.66694E-06
+               100         G      0.00000E+00   0.00000E+00  -1.07079E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   31  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 2                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.55335E-03  -2.49872E-02   3.47673E-02   8.46584E-03   0.00000E+00   4.30816E-05
+                 5         G      3.49530E-04  -2.21631E-02   4.48376E-02   8.56256E-03   0.00000E+00  -1.65243E-05
+                 6         G      4.21768E-03  -2.45313E-02   3.11318E-02   8.27382E-03   0.00000E+00  -7.61131E-05
+                 7         G     -5.61115E-04  -3.61350E-02   3.52164E-01   1.21485E-02   0.00000E+00  -1.16215E-04
+                 8         G      8.11040E-04  -3.47896E-02   3.52319E-01   1.17772E-02   0.00000E+00  -1.50068E-05
+                 9         G      2.19565E-03  -3.56476E-02   3.42273E-01   1.19275E-02   0.00000E+00   8.48868E-05
+                10         G      8.00427E-04  -3.94831E-02   7.37196E-01   1.31829E-02   0.00000E+00  -1.35997E-05
+                11         G      1.22164E-03  -3.88300E-02   7.32508E-01   1.30957E-02   0.00000E+00  -1.06594E-05
+                12         G      1.65749E-03  -3.91479E-02   7.21305E-01   1.30337E-02   0.00000E+00  -7.41582E-06
+                13         G      1.35362E-03  -3.96796E-02   1.13291E+00   1.31941E-02   0.00000E+00  -2.08599E-05
+                14         G      1.44673E-03  -3.95405E-02   1.12438E+00   1.30456E-02   0.00000E+00  -5.92507E-06
+                15         G      1.55519E-03  -3.95125E-02   1.11415E+00   1.31253E-02   0.00000E+00   8.82336E-06
+                16         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.55434E-03   2.49877E-02   3.15622E-02   8.38544E-03   0.00000E+00  -4.31260E-05
+                20         G     -3.48553E-04   2.21631E-02   4.05247E-02   8.45330E-03   0.00000E+00   1.64792E-05
+                21         G     -4.21657E-03   2.45308E-02   2.76736E-02   8.18705E-03   0.00000E+00  -1.93612E-05
+                22         G      5.63226E-04   3.61356E-02   3.49027E-01   1.21564E-02   0.00000E+00   1.16181E-04
+                23         G     -8.08903E-04   3.47896E-02   3.48139E-01   1.17961E-02   0.00000E+00   1.49734E-05
+                24         G     -2.19346E-03   3.56470E-02   3.39188E-01   1.19619E-02   0.00000E+00  -5.92238E-05
+                25         G     -7.97342E-04   3.94836E-02   7.33736E-01   1.32065E-02   0.00000E+00   1.35677E-05
+                26         G     -1.21856E-03   3.88300E-02   7.28237E-01   1.31335E-02   0.00000E+00   1.06282E-05
+                27         G     -1.65445E-03   3.91473E-02   7.18723E-01   1.30702E-02   0.00000E+00   4.46938E-08
+                28         G     -1.34958E-03   3.96802E-02   1.13190E+00   1.33050E-02   0.00000E+00   2.08279E-05
+                29         G     -1.44269E-03   3.95405E-02   1.12331E+00   1.31867E-02   0.00000E+00   5.89211E-06
+                30         G     -1.55112E-03   3.95119E-02   1.11381E+00   1.32191E-02   0.00000E+00  -5.18899E-06
+               100         G      0.00000E+00   0.00000E+00  -1.07955E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   32  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 3                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.62115E-03  -2.50568E-02   3.44389E-02   8.48616E-03   0.00000E+00   4.57183E-05
+                 5         G      2.98784E-04  -2.22626E-02   4.48532E-02   8.59694E-03   0.00000E+00  -1.42648E-05
+                 6         G      4.18823E-03  -2.46649E-02   3.13806E-02   8.32112E-03   0.00000E+00  -7.42084E-05
+                 7         G     -6.80150E-04  -3.62985E-02   3.52970E-01   1.22006E-02   0.00000E+00  -1.14858E-04
+                 8         G      7.03815E-04  -3.49737E-02   3.53807E-01   1.18412E-02   0.00000E+00  -1.33223E-05
+                 9         G      2.09767E-03  -3.58669E-02   3.44408E-01   1.20046E-02   0.00000E+00   8.70663E-05
+                10         G      6.42210E-04  -3.97016E-02   7.39868E-01   1.32544E-02   0.00000E+00  -1.26213E-05
+                11         G      1.07031E-03  -3.90594E-02   7.36220E-01   1.31751E-02   0.00000E+00  -9.59875E-06
+                12         G      1.51097E-03  -3.93987E-02   7.25969E-01   1.31195E-02   0.00000E+00  -6.33041E-06
+                13         G      1.17814E-03  -3.99190E-02   1.13789E+00   1.32739E-02   0.00000E+00  -2.04861E-05
+                14         G      1.27568E-03  -3.97814E-02   1.13047E+00   1.31251E-02   0.00000E+00  -5.46904E-06
+                15         G      1.38618E-03  -3.97587E-02   1.12130E+00   1.32069E-02   0.00000E+00   9.40445E-06
+                16         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.62214E-03   2.50573E-02   3.12666E-02   8.40609E-03   0.00000E+00  -4.57630E-05
+                20         G     -2.97801E-04   2.22626E-02   4.05538E-02   8.48859E-03   0.00000E+00   1.42195E-05
+                21         G     -4.18712E-03   2.46643E-02   2.79324E-02   8.23468E-03   0.00000E+00  -2.18273E-05
+                22         G      6.82273E-04   3.62990E-02   3.49847E-01   1.22086E-02   0.00000E+00   1.14825E-04
+                23         G     -7.01666E-04   3.49736E-02   3.49651E-01   1.18590E-02   0.00000E+00   1.32887E-05
+                24         G     -2.09547E-03   3.58663E-02   3.41321E-01   1.20370E-02   0.00000E+00  -6.12524E-05
+                25         G     -6.39107E-04   3.97022E-02   7.36455E-01   1.32784E-02   0.00000E+00   1.25891E-05
+                26         G     -1.06722E-03   3.90593E-02   7.31916E-01   1.32117E-02   0.00000E+00   9.56743E-06
+                27         G     -1.50791E-03   3.93980E-02   7.23309E-01   1.31551E-02   0.00000E+00  -1.08405E-06
+                28         G     -1.17408E-03   3.99195E-02   1.13690E+00   1.33831E-02   0.00000E+00   2.04540E-05
+                29         G     -1.27161E-03   3.97814E-02   1.12938E+00   1.32675E-02   0.00000E+00   5.43589E-06
+                30         G     -1.38209E-03   3.97581E-02   1.12093E+00   1.33035E-02   0.00000E+00  -5.74871E-06
+               100         G      0.00000E+00   0.00000E+00  -1.08482E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   33  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 4                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.67982E-03  -2.50430E-02   3.40721E-02   8.47830E-03   0.00000E+00   4.82960E-05
+                 5         G      2.43766E-04  -2.22857E-02   4.48263E-02   8.60366E-03   0.00000E+00  -1.18055E-05
+                 6         G      4.14151E-03  -2.47207E-02   3.16362E-02   8.34260E-03   0.00000E+00  -7.18444E-05
+                 7         G     -8.01670E-04  -3.63210E-02   3.52559E-01   1.22048E-02   0.00000E+00  -1.13017E-04
+                 8         G      5.86880E-04  -3.50251E-02   3.54113E-01   1.18587E-02   0.00000E+00  -1.14660E-05
+                 9         G      1.98258E-03  -3.59510E-02   3.45447E-01   1.20364E-02   0.00000E+00   8.91201E-05
+                10         G      4.72578E-04  -3.97585E-02   7.39763E-01   1.32716E-02   0.00000E+00  -1.14677E-05
+                11         G      9.04674E-04  -3.91317E-02   7.37222E-01   1.32012E-02   0.00000E+00  -8.42117E-06
+                12         G      1.34706E-03  -3.94915E-02   7.28043E-01   1.31526E-02   0.00000E+00  -5.19068E-06
+                13         G      9.87161E-04  -3.99947E-02   1.13846E+00   1.32993E-02   0.00000E+00  -1.99953E-05
+                14         G      1.08789E-03  -3.98602E-02   1.13226E+00   1.31512E-02   0.00000E+00  -4.95013E-06
+                15         G      1.19904E-03  -3.98429E-02   1.12426E+00   1.32346E-02   0.00000E+00   9.99655E-06
+                16         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.68081E-03   2.50435E-02   3.09204E-02   8.39847E-03   0.00000E+00  -4.83408E-05
+                20         G     -2.42780E-04   2.22857E-02   4.05199E-02   8.49608E-03   0.00000E+00   1.17600E-05
+                21         G     -4.14040E-03   2.47201E-02   2.81881E-02   8.25649E-03   0.00000E+00  -2.43327E-05
+                22         G      8.03799E-04   3.63215E-02   3.49455E-01   1.22137E-02   0.00000E+00   1.12983E-04
+                23         G     -5.84724E-04   3.50251E-02   3.49988E-01   1.18765E-02   0.00000E+00   1.14323E-05
+                24         G     -1.98036E-03   3.59503E-02   3.42358E-01   1.20671E-02   0.00000E+00  -6.32682E-05
+                25         G     -4.69466E-04   3.97591E-02   7.36413E-01   1.32961E-02   0.00000E+00   1.14354E-05
+                26         G     -9.01571E-04   3.91317E-02   7.32906E-01   1.32365E-02   0.00000E+00   8.38976E-06
+                27         G     -1.34399E-03   3.94908E-02   7.25310E-01   1.31873E-02   0.00000E+00  -2.23474E-06
+                28         G     -9.83082E-04   3.99952E-02   1.13750E+00   1.34063E-02   0.00000E+00   1.99631E-05
+                29         G     -1.08381E-03   3.98602E-02   1.13116E+00   1.32942E-02   0.00000E+00   4.91688E-06
+                30         G     -1.19493E-03   3.98423E-02   1.12386E+00   1.33339E-02   0.00000E+00  -6.33547E-06
+               100         G      0.00000E+00   0.00000E+00  -1.08621E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   34  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 5                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.72796E-03  -2.49407E-02   3.36690E-02   8.44057E-03   0.00000E+00   5.07690E-05
+                 5         G      1.84969E-04  -2.22271E-02   4.47552E-02   8.58083E-03   0.00000E+00  -9.17352E-06
+                 6         G      4.07704E-03  -2.46928E-02   3.18971E-02   8.33629E-03   0.00000E+00  -6.90290E-05
+                 7         G     -9.23693E-04  -3.61933E-02   3.50862E-01   1.21581E-02   0.00000E+00  -1.10707E-04
+                 8         G      4.61672E-04  -3.49345E-02   3.53155E-01   1.18265E-02   0.00000E+00  -9.47310E-06
+                 9         G      1.85125E-03  -3.58893E-02   3.45301E-01   1.20193E-02   0.00000E+00   9.09905E-05
+                10         G      2.94209E-04  -3.96427E-02   7.36709E-01   1.32310E-02   0.00000E+00  -1.01593E-05
+                11         G      7.27137E-04  -3.90357E-02   7.35324E-01   1.31701E-02   0.00000E+00  -7.15080E-06
+                12         G      1.16796E-03  -3.94143E-02   7.27322E-01   1.31291E-02   0.00000E+00  -4.02540E-06
+                13         G      7.83689E-04  -3.98948E-02   1.13434E+00   1.32663E-02   0.00000E+00  -1.93943E-05
+                14         G      8.86226E-04  -3.97652E-02   1.12942E+00   1.31199E-02   0.00000E+00  -4.37906E-06
+                15         G      9.96512E-04  -3.97531E-02   1.12270E+00   1.32046E-02   0.00000E+00   1.05853E-05
+                16         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.72895E-03   2.49412E-02   3.05257E-02   8.36090E-03   0.00000E+00  -5.08138E-05
+                20         G     -1.83983E-04   2.22270E-02   4.04196E-02   8.47387E-03   0.00000E+00   9.12806E-06
+                21         G     -4.07592E-03   2.46923E-02   2.84371E-02   8.25048E-03   0.00000E+00  -2.68381E-05
+                22         G      9.25822E-04   3.61939E-02   3.47779E-01   1.21686E-02   0.00000E+00   1.10673E-04
+                23         G     -4.59517E-04   3.49344E-02   3.49067E-01   1.18455E-02   0.00000E+00   9.43944E-06
+                24         G     -1.84904E-03   3.58887E-02   3.42212E-01   1.20488E-02   0.00000E+00  -6.52221E-05
+                25         G     -2.91098E-04   3.96432E-02   7.33436E-01   1.32559E-02   0.00000E+00   1.01271E-05
+                26         G     -7.24035E-04   3.90357E-02   7.31020E-01   1.32042E-02   0.00000E+00   7.11941E-06
+                27         G     -1.16490E-03   3.94137E-02   7.24523E-01   1.31628E-02   0.00000E+00  -3.37617E-06
+                28         G     -7.79611E-04   3.98954E-02   1.13341E+00   1.33706E-02   0.00000E+00   1.93622E-05
+                29         G     -8.82146E-04   3.97652E-02   1.12832E+00   1.32628E-02   0.00000E+00   4.34584E-06
+                30         G     -9.92413E-04   3.97524E-02   1.12227E+00   1.33062E-02   0.00000E+00  -6.93612E-06
+               100         G      0.00000E+00   0.00000E+00  -1.08343E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   35  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 6                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.76457E-03  -2.47485E-02   3.32336E-02   8.37258E-03   0.00000E+00   5.30927E-05
+                 5         G      1.23114E-04  -2.20849E-02   4.46398E-02   8.52783E-03   0.00000E+00  -6.40705E-06
+                 6         G      3.99515E-03  -2.45790E-02   3.21610E-02   8.30138E-03   0.00000E+00  -6.57928E-05
+                 7         G     -1.04404E-03  -3.59129E-02   3.47862E-01   1.20598E-02   0.00000E+00  -1.07967E-04
+                 8         G      3.30165E-04  -3.46985E-02   3.50908E-01   1.17434E-02   0.00000E+00  -7.38835E-06
+                 9         G      1.70548E-03  -3.56777E-02   3.43934E-01   1.19517E-02   0.00000E+00   9.26232E-05
+                10         G      1.10445E-04  -3.93503E-02   7.30663E-01   1.31312E-02   0.00000E+00  -8.72576E-06
+                11         G      5.40905E-04  -3.87673E-02   7.30457E-01   1.30804E-02   0.00000E+00  -5.81855E-06
+                12         G      9.76822E-04  -3.91625E-02   7.23718E-01   1.30473E-02   0.00000E+00  -2.86727E-06
+                13         G      5.71625E-04  -3.96153E-02   1.12544E+00   1.31734E-02   0.00000E+00  -1.86961E-05
+                14         G      6.74492E-04  -3.94920E-02   1.12186E+00   1.30298E-02   0.00000E+00  -3.77009E-06
+                15         G      7.82387E-04  -3.94848E-02   1.11650E+00   1.31154E-02   0.00000E+00   1.11554E-05
+                16         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.76556E-03   2.47490E-02   3.00870E-02   8.29299E-03   0.00000E+00  -5.31373E-05
+                20         G     -1.22130E-04   2.20849E-02   4.02526E-02   8.42133E-03   0.00000E+00   6.36173E-06
+                21         G     -3.99403E-03   2.45785E-02   2.86757E-02   8.21579E-03   0.00000E+00  -2.93003E-05
+                22         G      1.04616E-03   3.59134E-02   3.44805E-01   1.20724E-02   0.00000E+00   1.07934E-04
+                23         G     -3.28017E-04   3.46985E-02   3.46862E-01   1.17648E-02   0.00000E+00   7.35484E-06
+                24         G     -1.70328E-03   3.56770E-02   3.40844E-01   1.19807E-02   0.00000E+00  -6.70629E-05
+                25         G     -1.07345E-04   3.93509E-02   7.27480E-01   1.31566E-02   0.00000E+00   8.69364E-06
+                26         G     -5.37814E-04   3.87673E-02   7.26191E-01   1.31133E-02   0.00000E+00   5.78728E-06
+                27         G     -9.73766E-04   3.91619E-02   7.20862E-01   1.30800E-02   0.00000E+00  -4.47468E-06
+                28         G     -5.67563E-04   3.96158E-02   1.12454E+00   1.32747E-02   0.00000E+00   1.86641E-05
+                29         G     -6.70427E-04   3.94919E-02   1.12076E+00   1.31718E-02   0.00000E+00   3.73701E-06
+                30         G     -7.78302E-04   3.94842E-02   1.11604E+00   1.32188E-02   0.00000E+00  -7.53582E-06
+               100         G      0.00000E+00   0.00000E+00  -1.07639E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   36  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 7                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.78914E-03  -2.44695E-02   3.27713E-02   8.27540E-03   0.00000E+00   5.52269E-05
+                 5         G      5.91234E-05  -2.18615E-02   4.44822E-02   8.44551E-03   0.00000E+00  -3.55330E-06
+                 6         G      3.89706E-03  -2.43810E-02   3.24253E-02   8.23844E-03   0.00000E+00  -6.21895E-05
+                 7         G     -1.16046E-03  -3.54844E-02   3.43610E-01   1.19115E-02   0.00000E+00  -1.04862E-04
+                 8         G      1.94770E-04  -3.43210E-02   3.47406E-01   1.16106E-02   0.00000E+00  -5.26382E-06
+                 9         G      1.54785E-03  -3.53190E-02   3.41364E-01   1.18347E-02   0.00000E+00   9.39724E-05
+                10         G     -7.49065E-05  -3.88864E-02   7.21725E-01   1.29741E-02   0.00000E+00  -7.20436E-06
+                11         G      3.49810E-04  -3.83307E-02   7.22700E-01   1.29337E-02   0.00000E+00  -4.46010E-06
+                12         G      7.77565E-04  -3.87398E-02   7.17282E-01   1.29085E-02   0.00000E+00  -1.75053E-06
+                13         G      3.55523E-04  -3.91605E-02   1.11191E+00   1.30223E-02   0.00000E+00  -1.79193E-05
+                14         G      4.57214E-04  -3.90448E-02   1.10968E+00   1.28823E-02   0.00000E+00  -3.14012E-06
+                15         G      5.61234E-04  -3.90422E-02   1.10573E+00   1.29683E-02   0.00000E+00   1.16918E-05
+                16         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.79013E-03   2.44700E-02   2.96112E-02   8.19584E-03   0.00000E+00  -5.52713E-05
+                20         G     -5.81445E-05   2.18615E-02   4.00215E-02   8.33929E-03   0.00000E+00   3.50827E-06
+                21         G     -3.89595E-03   2.43805E-02   2.89005E-02   8.15295E-03   0.00000E+00  -3.16757E-05
+                22         G      1.16257E-03   3.54849E-02   3.40582E-01   1.19269E-02   0.00000E+00   1.04828E-04
+                23         G     -1.92637E-04   3.43209E-02   3.43408E-01   1.16357E-02   0.00000E+00   5.23059E-06
+                24         G     -1.54567E-03   3.53184E-02   3.38275E-01   1.18638E-02   0.00000E+00  -6.87424E-05
+                25         G      7.79847E-05   3.88869E-02   7.18644E-01   1.29998E-02   0.00000E+00   7.17247E-06
+                26         G     -3.46741E-04   3.83307E-02   7.18495E-01   1.29652E-02   0.00000E+00   4.42904E-06
+                27         G     -7.74529E-04   3.87391E-02   7.14381E-01   1.29400E-02   0.00000E+00  -5.49679E-06
+                28         G     -3.51490E-04   3.91610E-02   1.11104E+00   1.31201E-02   0.00000E+00   1.78875E-05
+                29         G     -4.53177E-04   3.90448E-02   1.10860E+00   1.30226E-02   0.00000E+00   3.10728E-06
+                30         G     -5.57179E-04   3.90416E-02   1.10524E+00   1.30731E-02   0.00000E+00  -8.11908E-06
+               100         G      0.00000E+00   0.00000E+00  -1.06520E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   37  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 8                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.80176E-03  -2.41111E-02   3.22893E-02   8.15155E-03   0.00000E+00   5.71393E-05
+                 5         G     -5.94099E-06  -2.15631E-02   4.42862E-02   8.33613E-03   0.00000E+00  -6.65549E-07
+                 6         G      3.78484E-03  -2.41048E-02   3.26868E-02   8.14940E-03   0.00000E+00  -5.82923E-05
+                 7         G     -1.27084E-03  -3.49200E-02   3.38217E-01   1.17174E-02   0.00000E+00  -1.01473E-04
+                 8         G      5.81704E-05  -3.38126E-02   3.42747E-01   1.14321E-02   0.00000E+00  -3.15484E-06
+                 9         G      1.38164E-03  -3.48238E-02   3.37671E-01   1.16715E-02   0.00000E+00   9.50049E-05
+                10         G     -2.57853E-04  -3.82643E-02   7.10144E-01   1.27642E-02   0.00000E+00  -5.63748E-06
+                11         G      1.58040E-04  -3.77386E-02   7.12272E-01   1.27340E-02   0.00000E+00  -3.11317E-06
+                12         G      5.74647E-04  -3.81584E-02   7.08204E-01   1.27165E-02   0.00000E+00  -7.08185E-07
+                13         G      1.40259E-04  -3.85438E-02   1.09413E+00   1.28173E-02   0.00000E+00  -1.70869E-05
+                14         G      2.39320E-04  -3.84369E-02   1.09325E+00   1.26817E-02   0.00000E+00  -2.50740E-06
+                15         G      3.38113E-04  -3.84384E-02   1.09072E+00   1.27677E-02   0.00000E+00   1.21808E-05
+                16         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.80274E-03   2.41116E-02   2.91070E-02   8.07200E-03   0.00000E+00  -5.71833E-05
+                20         G      6.91224E-06   2.15631E-02   3.97322E-02   8.23004E-03   0.00000E+00   6.20944E-07
+                21         G     -3.78373E-03   2.41043E-02   2.91081E-02   8.06388E-03   0.00000E+00  -3.39236E-05
+                22         G      1.27293E-03   3.49206E-02   3.35222E-01   1.17361E-02   0.00000E+00   1.01440E-04
+                23         G     -5.60578E-05   3.38125E-02   3.38801E-01   1.14619E-02   0.00000E+00   3.12200E-06
+                24         G     -1.37948E-03   3.48232E-02   3.34582E-01   1.17014E-02   0.00000E+00  -7.02184E-05
+                25         G      2.60901E-04   3.82648E-02   7.07171E-01   1.27901E-02   0.00000E+00   5.60593E-06
+                26         G     -1.55002E-04   3.77385E-02   7.08151E-01   1.27642E-02   0.00000E+00   3.08243E-06
+                27         G     -5.71641E-04   3.81578E-02   7.05271E-01   1.27469E-02   0.00000E+00  -6.41204E-06
+                28         G     -1.36266E-04   3.85444E-02   1.09330E+00   1.29115E-02   0.00000E+00   1.70554E-05
+                29         G     -2.35324E-04   3.84369E-02   1.09219E+00   1.28197E-02   0.00000E+00   2.47492E-06
+                30         G     -3.34099E-04   3.84377E-02   1.09020E+00   1.28732E-02   0.00000E+00  -8.67109E-06
+               100         G      0.00000E+00   0.00000E+00  -1.05019E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   38  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 9                 
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.80305E-03  -2.36845E-02   3.17955E-02   8.00487E-03   0.00000E+00   5.88078E-05
+                 5         G     -7.09534E-05  -2.11996E-02   4.40575E-02   8.20328E-03   0.00000E+00   2.20097E-06
+                 6         G      3.66124E-03  -2.37602E-02   3.29425E-02   8.03745E-03   0.00000E+00  -5.41894E-05
+                 7         G     -1.37334E-03  -3.42386E-02   3.31850E-01   1.14841E-02   0.00000E+00  -9.78975E-05
+                 8         G     -7.68825E-05  -3.31905E-02   3.37084E-01   1.12138E-02   0.00000E+00  -1.11562E-06
+                 9         G      1.21054E-03  -3.42088E-02   3.32989E-01   1.14677E-02   0.00000E+00   9.57032E-05
+                10         G     -4.34532E-04  -3.75053E-02   6.96293E-01   1.25086E-02   0.00000E+00  -4.06905E-06
+                11         G     -3.01941E-05  -3.70112E-02   6.99526E-01   1.24885E-02   0.00000E+00  -1.81442E-06
+                12         G      3.72701E-04  -3.74384E-02   6.96805E-01   1.24781E-02   0.00000E+00   2.30865E-07
+                13         G     -6.93541E-05  -3.77865E-02   1.07269E+00   1.25655E-02   0.00000E+00  -1.62244E-05
+                14         G      2.57506E-05  -3.76891E-02   1.07311E+00   1.24349E-02   0.00000E+00  -1.89003E-06
+                15         G      1.18160E-04  -3.76940E-02   1.07199E+00   1.25204E-02   0.00000E+00   1.26116E-05
+                16         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.80401E-03   2.36849E-02   2.85845E-02   7.92532E-03   0.00000E+00  -5.88512E-05
+                20         G      7.19147E-05   2.11996E-02   3.93930E-02   8.09719E-03   0.00000E+00  -2.24503E-06
+                21         G     -3.66015E-03   2.37597E-02   2.92960E-02   7.95175E-03   0.00000E+00  -3.60093E-05
+                22         G      1.37540E-03   3.42391E-02   3.28890E-01   1.15062E-02   0.00000E+00   9.78652E-05
+                23         G      7.89687E-05   3.31905E-02   3.33195E-01   1.12492E-02   0.00000E+00   1.08327E-06
+                24         G     -1.20840E-03   3.42082E-02   3.29898E-01   1.14991E-02   0.00000E+00  -7.14592E-05
+                25         G      4.37540E-04   3.75058E-02   6.93434E-01   1.25347E-02   0.00000E+00   4.03792E-06
+                26         G      3.31935E-05   3.70111E-02   6.95508E-01   1.25173E-02   0.00000E+00   1.78408E-06
+                27         G     -3.69733E-04   3.74378E-02   6.93851E-01   1.25075E-02   0.00000E+00  -7.19560E-06
+                28         G      7.32947E-05   3.77870E-02   1.07190E+00   1.26558E-02   0.00000E+00   1.61933E-05
+                29         G     -2.18073E-05   3.76891E-02   1.07208E+00   1.25700E-02   0.00000E+00   1.85800E-06
+                30         G     -1.14198E-04   3.76934E-02   1.07145E+00   1.26262E-02   0.00000E+00  -9.17895E-06
+               100         G      0.00000E+00   0.00000E+00  -1.03185E-01   0.00000E+00   0.00000E+00   0.00000E+00
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   39  
+                                                                                        FINAL ANALYSIS SEGMENT                   
+ 0000000000                                                                SAERO ANALYSIS: BOUNDARY 1, SUBCASE 10                
+                                                                                                                                 
+                                                                                                                                 
+                                            D I S P L A C E M E N T   V E C T O R                                                
+
+            POINT ID.   TYPE          T1            T2            T3            R1            R2            R3
+                 1         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 2         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 3         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                 4         G     -3.79414E-03  -2.32036E-02   3.12980E-02   7.84011E-03   0.00000E+00   6.02220E-05
+                 5         G     -1.34814E-04  -2.07837E-02   4.38028E-02   8.05153E-03   0.00000E+00   4.99334E-06
+                 6         G      3.52949E-03  -2.33596E-02   3.31893E-02   7.90675E-03   0.00000E+00  -4.99760E-05
+                 7         G     -1.46652E-03  -3.34637E-02   3.24716E-01   1.12195E-02   0.00000E+00  -9.42359E-05
+                 8         G     -2.07785E-04  -3.24767E-02   3.30611E-01   1.09633E-02   0.00000E+00   8.05133E-07
+                 9         G      1.03838E-03  -3.34961E-02   3.27493E-01   1.12306E-02   0.00000E+00   9.60662E-05
+                10         G     -6.01511E-04  -3.66363E-02   6.80643E-01   1.22163E-02   0.00000E+00  -2.54090E-06
+                11         G     -2.10989E-04  -3.61745E-02   6.84908E-01   1.22058E-02   0.00000E+00  -5.96410E-07
+                12         G      1.76161E-04  -3.66058E-02   6.83501E-01   1.22019E-02   0.00000E+00   1.04410E-06
+                13         G     -2.68948E-04  -3.69156E-02   1.04832E+00   1.22758E-02   0.00000E+00  -1.53577E-05
+                14         G     -1.78936E-04  -3.68283E-02   1.04998E+00   1.21509E-02   0.00000E+00  -1.30444E-06
+                15         G     -9.38184E-05  -3.68359E-02   1.05023E+00   1.22355E-02   0.00000E+00   1.29769E-05
+                16         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                17         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                18         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+                19         G      3.79509E-03   2.32041E-02   2.80541E-02   7.76059E-03   0.00000E+00  -6.02648E-05
+                20         G      1.35763E-04   2.07837E-02   3.90143E-02   7.94534E-03   0.00000E+00  -5.03677E-06
+                21         G     -3.52841E-03   2.33591E-02   2.94623E-02   7.82070E-03   0.00000E+00  -3.79062E-05
+                22         G      1.46855E-03   3.34642E-02   3.21794E-01   1.12453E-02   0.00000E+00   9.42041E-05
+                23         G      2.09840E-04   3.24767E-02   3.26782E-01   1.10052E-02   0.00000E+00  -8.36915E-07
+                24         G     -1.03627E-03   3.34955E-02   3.24399E-01   1.12642E-02   0.00000E+00  -7.24451E-05
+                25         G      6.04473E-04   3.66369E-02   6.77899E-01   1.22425E-02   0.00000E+00   2.51026E-06
+                26         G      2.13942E-04   3.61745E-02   6.81009E-01   1.22333E-02   0.00000E+00   5.66549E-07
+                27         G     -1.73238E-04   3.66052E-02   6.80541E-01   1.22303E-02   0.00000E+00  -7.83027E-06
+                28         G      2.72827E-04   3.69161E-02   1.04757E+00   1.23624E-02   0.00000E+00   1.53271E-05
+                29         G      1.82818E-04   3.68282E-02   1.04899E+00   1.22824E-02   0.00000E+00   1.27294E-06
+                30         G      9.77185E-05   3.68353E-02   1.04966E+00   1.23410E-02   0.00000E+00  -9.63270E-06
+               100         G      0.00000E+00   0.00000E+00  -1.01083E-01   0.00000E+00   0.00000E+00   0.00000E+00
+
+
+
+                               ****************************************
+                               ***                                  ***
+                               *** A S T R O S  T E R M I N A T E D ***
+                               ***     03/16/22   12:37:34          ***
+                               ***                                  ***
+                               ****************************************
+1Intro to Aeroelasticity Wing                                                           ASTROS VERSION 11.0  03/16/22   P.   40  
+                                                                                                                                 
+                    A S T R O S   T I M I N G   S U M M A R Y                                                                    
+  ELAPSED   TOTAL                                                       STEP                                                     
+   TIME      CPU                                                        CPU                                                      
+ -------- ----------                                                 ----------                                                  
+ 00:00:00 00:00:00.0 *** BEGIN ASTROS ***                                      
+ 00:00:00 00:00:00.0 BEGIN PREFACE MODULES                           00:00:00.0
+ 00:00:00 00:00:00.0 ELEMENT MATRIX GENERATION                       00:00:00.0
+ 00:00:00 00:00:00.0 NON-PLANAR STEADY AERODYNAMICS                  00:00:00.0
+ 00:00:00 00:00:00.0 PHASE 1 ELEM. MATRIX ASSEMBLY                   00:00:00.0
+ 00:00:00 00:00:00.0 PHASE 1 STATIC LOADS GENER.                     00:00:00.0
+ 00:00:00 00:00:00.0 STEADY AERODYNAMICS                             00:00:00.0
+ 00:00:00 00:00:00.0 UNSTEADY AERODYNAMICS                           00:00:00.0
+ 00:00:00 00:00:00.0 ******************************                  00:00:00.0
+ 00:00:00 00:00:00.0 BEGIN FINAL ANALYSIS                            00:00:00.0
+ 00:00:00 00:00:00.0       BOUNDARY CONDITION        1               00:00:00.0
+ 00:00:00 00:00:00.0          MPC REDUCTION                          00:00:00.0
+ 00:00:00 00:00:00.0          AUTOSPC COMPUTATIONS                   00:00:00.0
+ 00:00:00 00:00:00.0          SPC REDUCTION                          00:00:00.0
+ 00:00:00 00:00:00.0          SAERO INITIALIZATION                   00:00:00.0
+ 00:00:00 00:00:00.0          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.0          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.0          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.0          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.0          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.0          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.1          SAERO SUPPORT REDUCTION                00:00:00.0
+ 00:00:01 00:00:00.1          >>>DISCIPLINE: STEADY AERO             00:00:00.0
+ 00:00:01 00:00:00.2          SPC RECOVERY                           00:00:00.0
+ 00:00:01 00:00:00.2          MPC RECOVERY                           00:00:00.0
+ 00:00:01 00:00:00.2          OUTPUT PROCESSING                      00:00:00.0
+ 00:00:01 00:00:00.2 *** END ASTROS ***                                        

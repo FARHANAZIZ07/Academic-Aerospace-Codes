@@ -1,0 +1,19 @@
+# AeroElasticity Codes
+
+This Folder contains MATLAB and ASTROS projects and codes developed during my academic coursework in aerospace engineering.
+
+## Projects
+
+### HW2 and HW3
+ Missing the Eact Project descritpiton (Sorry about that)
+
+###HW6 
+	Spline method of the wing for structura modes with different degrees of Freedom
+
+### HW7 and HW8 
+	Modes and Flutter dettermenation
+
+### ASTROS
+
+   Using Automated STRuctural Optimization System to determine Different MODES and FLutter problemON different Wings
+

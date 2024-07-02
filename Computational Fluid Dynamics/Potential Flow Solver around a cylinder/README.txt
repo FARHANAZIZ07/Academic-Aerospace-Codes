@@ -1,0 +1,3 @@
+	
+Write a second-order accurate potential flow solver for the flow around a cylinder . Use Rmax = 10, Rcyl = 0.5, U∞ = 1, and Nr = Nthetha = 50.
+Show a plot of the convergence history as well as the Cp distribution in the entire domain (e.g. use Matlab's pcolor command). Also, plot Cp vs. thetha along the cylinder surface and compare with the analytical solution Cer = 1-4 sin20. Show this last plot also using Nr = Nthetha= 100 as well as Nr=Nthetha= 200 and perform a grid convergence study.

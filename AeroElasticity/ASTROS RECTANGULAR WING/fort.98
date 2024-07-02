@@ -1,0 +1,57 @@
+ 00:00:00 00:00:00.0 *** BEGIN ASTROS ***                           
+ 00:00:00 00:00:00.0     PREPASS          BEGIN                     
+ 00:00:00 00:00:00.0     *** SOLUTION     BEGIN                     
+ 00:00:00 00:00:00.0     *** IFP          BEGIN                     
+ 00:00:00 00:00:00.0     *** FPKEVL       BEGIN                     
+ 00:00:00 00:00:00.0 BEGIN PREFACE MODULES                           00:00:00.0
+ 00:00:00 00:00:00.0     *** MAKEST       BEGIN                     
+ 00:00:00 00:00:00.0     *** EMG          BEGIN                     
+ 00:00:00 00:00:00.0     *** NLEMG        BEGIN                     
+ 00:00:00 00:00:00.0     *** PFBULK       BEGIN                     
+ 00:00:00 00:00:00.0 ELEMENT MATRIX GENERATION                       00:00:00.0
+ 00:00:00 00:00:00.0     *** STEADYNP     BEGIN                     
+ 00:00:00 00:00:00.0 NON-PLANAR STEADY AERODYNAMICS                  00:00:00.0
+ 00:00:00 00:00:00.0     *** EMA1         BEGIN                     
+ 00:00:00 00:00:00.0     *** NLEMA1       BEGIN                     
+ 00:00:00 00:00:00.0 PHASE 1 ELEM. MATRIX ASSEMBLY                   00:00:00.0
+ 00:00:00 00:00:00.0     *** LODGEN       BEGIN                     
+ 00:00:00 00:00:00.0     *** NLLODGEN     BEGIN                     
+ 00:00:00 00:00:00.0 PHASE 1 STATIC LOADS GENER.                     00:00:00.0
+ 00:00:00 00:00:00.0     *** TRIMCHEK     BEGIN                     
+ 00:00:00 00:00:00.0     *** SPLINES      BEGIN                     
+ 00:00:00 00:00:00.0 STEADY AERODYNAMICS                             00:00:00.0
+ 00:00:00 00:00:00.0     *** UNSTEADY     BEGIN                     
+ 00:00:00 00:00:00.0     *** AMP          BEGIN                     
+ 00:00:00 00:00:00.0     *** SPLINEU      BEGIN                     
+ 00:00:00 00:00:00.0 UNSTEADY AERODYNAMICS                           00:00:00.0
+ 00:00:00 00:00:00.0 ******************************                  00:00:00.0
+ 00:00:00 00:00:00.0     *** ANALINIT     BEGIN                     
+ 00:00:00 00:00:00.0     *** EMA2         BEGIN                     
+ 00:00:00 00:00:00.0     *** BCIDVAL      BEGIN                     
+ 00:00:00 00:00:00.0 BEGIN FINAL ANALYSIS                            00:00:00.0
+ 00:00:00 00:00:00.0     *** MKUSET       BEGIN                     
+ 00:00:00 00:00:00.0     *** BCBGPDT      BEGIN                     
+ 00:00:00 00:00:00.0     *** BCBULK       BEGIN                     
+ 00:00:00 00:00:00.0     *** BOUND        BEGIN                     
+ 00:00:00 00:00:00.0     *** NULLMAT      BEGIN                     
+ 00:00:00 00:00:00.0     *** MK2GG        BEGIN                     
+ 00:00:00 00:00:00.0     *** GPWG         BEGIN                     
+ 00:00:00 00:00:00.0     *** GTLOAD       BEGIN                     
+ 00:00:00 00:00:00.0       BOUNDARY CONDITION        1               00:00:00.0
+ 00:00:00 00:00:00.0     *** GPSP         BEGIN                     
+ 00:00:00 00:00:00.0     *** MKPVECT      BEGIN                     
+ 00:00:00 00:00:00.0     *** BOUNDUPD     BEGIN                     
+ 00:00:00 00:00:00.0          AUTOSPC COMPUTATIONS                   00:00:00.0
+ 00:00:00 00:00:00.0     *** NREDUCE      BEGIN                     
+ 00:00:00 00:00:00.0          SPC REDUCTION                          00:00:00.0
+ 00:00:00 00:00:00.0     *** SDCOMP       BEGIN                     
+ 00:00:00 00:00:00.0     *** FBS          BEGIN                     
+ 00:00:00 00:00:00.0          >>>DISCIPLINE: STATICS                 00:00:00.0
+ 00:00:00 00:00:00.0     *** YSMERGE      BEGIN                     
+ 00:00:00 00:00:00.0     *** OFPSPCF      BEGIN                     
+ 00:00:00 00:00:00.0          SPC RECOVERY                           00:00:00.0
+ 00:00:00 00:00:00.0     *** OFPDISP      BEGIN                     
+ 00:00:00 00:00:00.0     *** EDR          BEGIN                     
+ 00:00:00 00:00:00.0     *** OFPEDR       BEGIN                     
+ 00:00:00 00:00:00.0          OUTPUT PROCESSING                      00:00:00.0
+ 00:00:00 00:00:00.0 *** END ASTROS ***                             

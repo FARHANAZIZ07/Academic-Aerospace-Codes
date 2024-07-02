@@ -1,0 +1,5 @@
+##### 
+  	Turbo jet engine all the stages calculation with given specifications including the efficiency and choked/ not choked nozzle
+
+
+####

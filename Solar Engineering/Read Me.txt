@@ -1,0 +1,10 @@
+############
+
+		Fixed solar Panel and Single Axis Solar panel Codes for particular specifications and for the weather data of Dayton OHIO. Output is obtained hourly,monthly 		and yearly.
+######
+ 
+
+
+
+		Similarly using the Output data a simple battery management system  is derived to avoid wastage and to capitalize the extra power generated
+#########

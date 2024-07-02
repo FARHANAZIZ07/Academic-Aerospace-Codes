@@ -1,0 +1,26 @@
+
+#### PROJECT########
+
+	A small evaporative cooler (measuring 12 cm x 12 cm x 2 cm) is fed water from a tank holding a certain
+	quantity of water at an initial temperature. At the same moment, the pump moving water to the top of
+	the evaporative cooler and a fan blowing air over the evaporative cooler are started at the same time.
+	Every one minute, the temperature of the water tank and the temperature of the air leaving the
+	evaporative cooler are recorded. The air entered the evaporative cooler at ambient temperature and
+	ambient relative humidity. The air travels through small channels within the evaporative cooler
+	(approximately 3 mm wide), during which time water is evaporated. The water evaporation cools both
+	the water and the air. The water falls back into the bulk tank, cooling the tank water slightly.
+Air velocity: 0.5 m/s
+Water mass flow rate: 0.02 kg/s
+IMPORTANT: The energy to evaporate the water comes from both the water and the air. Assuming some
+fraction of the latent energy (call it X) is derived from the water and the other fraction from the air. Assuming a value of 0.5 for X.
+
+	 Code  predict and create a 2D plot showing the transient temperature distribution of
+	the air for any time step in the cross-section shown in the Figure above (measuring 2 cm x 3 mm). Using
+	200 nodes in the x direction and 50 nodes in the y direction assuming that the air adopts a
+	fully developed velocity profile in the channel direction throughout the channels. Simultaneously,
+	calculating the change in the bulk temperature of the water as a function of time and using change in bulk
+	water temperature for the temperature boundary condition of the walls of the channel.
+
+	Plots of the temperature distribution of the 2D wall at 1 minute, 5 minutes and 10 minutes for 
+	optimal value of X.
+########################
