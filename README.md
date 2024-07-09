@@ -19,4 +19,4 @@ This repository contains MATLAB and PYTHON codes developed during my academic co
 3. Run the scripts as per the instructions in each project's README file. (All the Files are simple to run if otherwise stated)
 
 ### PROJECT PORTFOLIO 
-LINK -https://drive.google.com/file/d/1ZUQUZaeZATPWo4QFLydC-fyV4pVwbtPc/view?usp=sharing
+LINK -https://drive.google.com/file/d/1w7iOFRgn8-IGJtLHyMeUBUc95tWhHS_K/view?usp=sharing
